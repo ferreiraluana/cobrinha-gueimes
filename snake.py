@@ -1,5 +1,6 @@
-# first, pip install pygame
-# then run
+# Verify Python Version
+# Install PyGame Library: python3 -m pip install pygame
+# Run: python3 snake.py
 
 import pygame, sys, random
 from pygame.locals import *
@@ -72,8 +73,8 @@ while True:
     if collision(snake[0],apple_pos):
         apple_pos = on_grid_random()
         snake.append((0,0))
-        print("add no final")
-        print(snake)
+        #print("add no final")
+        #print(snake)
         score += 1
     
     if my_direction == UP:
